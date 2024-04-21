@@ -9,12 +9,14 @@ import {
   RouterProvider,
   Route,
 } from 'react-router-dom';
+import SearchComponent from './Components/CustomSearch';
+import Home from './Home';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' >
       <Route
         path=''
-        element={<SearchPage />} />
+        element={<Home />} />
       <Route path='/details/:userId' element={<Details />} />
     </Route>
   )
