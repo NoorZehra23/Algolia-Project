@@ -1,7 +1,5 @@
 
 import React from 'react';
-import SearchPage from './SearchPage';
-import Details from './Details';
 
 import {
   createBrowserRouter,
@@ -9,8 +7,8 @@ import {
   RouterProvider,
   Route,
 } from 'react-router-dom';
-import SearchComponent from './Components/CustomSearch';
-import Home from './Home';
+import Home from './pages/Home';
+import Details from './pages/Details';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' >

@@ -1,10 +1,8 @@
 import React from 'react';
-import algoliasearch from 'algoliasearch/lite';
 import { InstantSearch, SearchBox, Hits, Pagination, RefinementList } from 'react-instantsearch';
 import { useNavigate } from 'react-router-dom';
-import Refine from './Components/RefinementList';
-
-const searchClient = algoliasearch('H883WZN5K5', 'c4c34621505ccdbb7ec2d7f8907571c4');
+import Refine from '../Components/RefinementList';
+import searchClient from '../helper';
 function Hit({ hit }) {
   const navigate = useNavigate()
   const handleClick = () => {
