@@ -1,28 +1,13 @@
-
 import React from 'react';
+import GoogleCalendar from "./pages/Calendar";
 
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-  Route,
-} from 'react-router-dom';
-import Home from './pages/Home';
-import Details from './pages/Details';
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' >
-      <Route
-        path=''
-        element={<Home />} />
-      <Route path='/details/:userId' element={<Details />} />
-    </Route>
-  )
-)
+function App() {
+    return (
+        <div className="App">
+        <GoogleCalendar/>
+        </div>
 
-
-const App = () => {
-  return <RouterProvider router={router} />;
-};
+    );
+}
 
 export default App;
